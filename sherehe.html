@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="css/add.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png">
+    <link rel="shortcut icon" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="./css/list.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <title>Sherehe</title>
+
+</head>
+<body>
+<div class="btn_container">
+    
+    <div class="btn_container">
+        <div class="return">
+            <a class="btn_primary" href='index.html'>
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="flexbox">
+        <div class="search">
+            <form id="firstForm">
+                <input class='find' type="text" name='search' placeholder="Search . . ." autocomplete="off" required>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<main>
+    <ol class="gradient-list">
+        <div class="gradient-list stuff-list">
+            <li class="listItem">
+                <h2 class="listName">Twas A Good Day</h2>
+                <p class="listArtist">Ice Cube</p>
+                <div class="deleteBtn">
+                    <button class="delete" value="somestuff" type="submit"></button>
+                </div>
+            </li>
+        </div>
+        <li class="add">
+            <button class="btn_hide"><i class="fa fa-plus fa-2x icon"></i></button>
+        </li>
+    </ol>
+</main>
+
+<div class="container hide_it">
+    <div class="card">
+        <h1 class="card_title">You got taste </h1>
+            <form id="songForm" class="card_form">
+                <div class="input">
+                    <input id="artistSong" type="text" class="input_field" autocomplete="off" required />
+                    <label class="input_label">What's the song called?</label>
+                </div>
+                <div class="input">
+                    <input id="artistName" type="text" class="input_field" autocomplete="off" required />
+                    <label class="input_label">Who made the song?</label>
+                </div>
+                <div class="card_btn">
+                    <button id="submit_btn" class="btn btn-primary" type="submit">Share</button>
+                </div>
+            </form>
+    </div>
+</div>
+
+    <script src="js/add.js"></script>
+    <script src="./renderer.js"></script> 
+      
+</body>
+</html>

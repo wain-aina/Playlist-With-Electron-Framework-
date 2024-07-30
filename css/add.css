@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald|Roboto);
+
+.container {
+    position: relative;
+    background-color: #fafafe;
+    border-radius: 10px;
+    padding: 25px 20px 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.hide_it {
+    display: none;
+}
+
+.card {
+    position: relative;
+    z-index: 2;
+}
+
+.card_title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.input {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    padding-top: 10px;
+}
+
+.input+.input {
+    margin-top: 10px;
+}
+
+.input_label {
+    color: #8597a3;
+    position: absolute;
+    top: 20px;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.input_field {
+    border: 0;
+    padding: 0;
+    z-index: 1;
+    background-color: transparent;
+    border-bottom: 2px solid #eee;
+    font: inherit;
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.input_field:focus,
+.input_field:valid {
+    outline: 0;
+    border-bottom-color: #665856;
+}
+
+.input_field:focus+.input_label,
+.input_field:valid+.input_label {
+    color: #665856;
+    -moz-transform: translateY(-25px);
+    -ms-transform: translateY(-25px);
+    -webkit-transform: translateY(-25px);
+    transform: translateY(-25px);
+}
+
+.btn {
+    border-radius: 20px;
+    background: #3498db;
+    color: #ffffff;
+    padding: 12px;
+    min-width: 100px;
+    border: 0px;
+}
+
+.btn:hover {
+    background: #2980b9;
+    color: #ffffff;
+}
+
+.card_btn {
+    padding-top: 12px;
+}
+
+.btn_hide {
+    background: transparent;
+    border: none;
+}
